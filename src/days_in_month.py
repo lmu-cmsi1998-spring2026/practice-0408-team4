@@ -9,3 +9,8 @@ def days_in_month(year: int, month: int) -> int:
         return 30
     else:
         return None
+    
+if __name__ == "__main__":
+    # Test leap year
+    assert days_in_month(2000, 2) == 29
+    assert days_in_month(2001, 2) == 28
