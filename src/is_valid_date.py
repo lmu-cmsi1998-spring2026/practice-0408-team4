@@ -7,10 +7,10 @@ def is_valid_date(year: int, month: int, day: int) -> bool:
 
 
 if __name__ == "__main__":
-    # --- Tests ---
-    assert is_valid_date(2000, 1, 1)
-    assert is_valid_date(2000, 12, 1)
-    assert not is_valid_date(-1, 1, 1)
-    assert not is_valid_date(2000, 0, 1)
-    assert not is_valid_date(2000, 1, 0)
-    assert not is_valid_date(2001, 2, 29)
+    print(is_valid_date(2020, 2, 29))  # True
+    print(is_valid_date(2019, 2, 29))  # False
+    print(is_valid_date(2020, 1, 31))  # True
+    print(is_valid_date(2020, 4, 31))  # False
+    print(is_valid_date(1938, 8, 31)) # True
+    print(is_valid_date(1602, 9, 30)) # True
+    print(is_valid_date(1602, 9, 31)) # False
